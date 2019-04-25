@@ -8,7 +8,7 @@ node {
 	if ( env.BRANCH_NAME != 'master' ) {
 		branchCleanup()
 		branchDeploy()
-		allTests()
+		//allTests()
 		userApproval()
 		branchCleanup()
 		msgbranchCleanup()
@@ -18,7 +18,7 @@ node {
 	if ( env.BRANCH_NAME == 'master' ) {
 		masterDevDeploy()
 		SonarQubeAnalysis()
-		allTests()
+		//allTests()
 		promoteQA()
 		userApproval3()
 		promotePROD()
